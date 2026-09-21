@@ -1,0 +1,754 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>韩剧怪物-悬疑犯罪剧深度解析与观看指南</title>
+    <meta name="description" content="本站为您提供韩剧《怪物》的详细剧情解析、人物关系梳理、分集看点以及高清资源获取指南，深度剖析这部犯罪悬疑巨作的叙事结构与视觉美学。">
+    <meta name="keywords" content="韩剧怪物,怪物韩剧,韩剧怪物剧情,怪物韩剧分集介绍,韩剧怪物演员">
+    <style>
+        :root {
+            --primary-color: #0f0f0f;
+            --secondary-color: #1a1a1a;
+            --accent-color: #c9a227; /* 金色，象征审判与珍贵 */
+            --text-main: #ffffff;
+            --text-muted: #a0a0a0;
+            --border-color: #333333;
+            --spacing-unit: 16px;
+            --container-width: 1200px;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans SC", sans-serif;
+            background-color: var(--primary-color);
+            color: var(--text-main);
+            line-height: 1.6;
+        }
+
+        a {
+            text-decoration: none;
+            color: inherit;
+            transition: color 0.3s ease;
+        }
+
+        ul {
+            list-style: none;
+        }
+
+        /* 布局容器 */
+        .container {
+            max-width: var(--container-width);
+            margin: 0 auto;
+            padding: 0 var(--spacing-unit);
+        }
+
+        /* 导航栏 */
+        header {
+            background-color: rgba(15, 15, 15, 0.95);
+            border-bottom: 1px solid var(--border-color);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            backdrop-filter: blur(10px);
+        }
+
+        .nav-wrapper {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            height: 70px;
+        }
+
+        .logo {
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: var(--text-main);
+            letter-spacing: -0.5px;
+        }
+
+        .logo span {
+            color: var(--accent-color);
+        }
+
+        nav ul {
+            display: flex;
+            gap: 30px;
+        }
+
+        nav a {
+            font-size: 0.95rem;
+            font-weight: 500;
+            color: var(--text-muted);
+        }
+
+        nav a:hover, nav a.active {
+            color: var(--text-main);
+        }
+
+        .search-icon {
+            display: none; /* 移动端隐藏 */
+        }
+
+        /* Hero 区域 */
+        .hero {
+            position: relative;
+            height: 600px;
+            display: flex;
+            align-items: center;
+            background: linear-gradient(to right, rgba(0,0,0,0.9), rgba(0,0,0,0.6) 60%, rgba(0,0,0,0.3)),
+                        url('https://picsum.photos/seed/monsterhero/1920/1080.jpg') no-repeat center center/cover;
+            margin-bottom: 60px;
+        }
+
+        .hero-content {
+            max-width: 600px;
+        }
+
+        .hero-tag {
+            display: inline-block;
+            background-color: var(--accent-color);
+            color: #000;
+            padding: 4px 12px;
+            font-size: 0.8rem;
+            font-weight: 700;
+            margin-bottom: 20px;
+            text-transform: uppercase;
+        }
+
+        .hero h1 {
+            font-size: 3.5rem;
+            line-height: 1.1;
+            margin-bottom: 20px;
+            font-weight: 800;
+        }
+
+        .hero p {
+            font-size: 1.1rem;
+            color: var(--text-muted);
+            margin-bottom: 30px;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 12px 30px;
+            background-color: var(--accent-color);
+            color: #000;
+            font-weight: 700;
+            border-radius: 4px;
+            transition: transform 0.2s, background-color 0.2s;
+        }
+
+        .btn:hover {
+            background-color: #d4b045;
+            transform: translateY(-2px);
+        }
+
+        .btn-outline {
+            background-color: transparent;
+            border: 2px solid var(--text-main);
+            color: var(--text-main);
+            margin-left: 15px;
+        }
+
+        .btn-outline:hover {
+            background-color: var(--text-main);
+            color: #000;
+        }
+
+        /* 通用 Section */
+        section {
+            padding: 60px 0;
+            border-bottom: 1px solid var(--border-color);
+        }
+
+        .section-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-end;
+            margin-bottom: 40px;
+        }
+
+        .section-title {
+            font-size: 2rem;
+            font-weight: 700;
+            position: relative;
+            padding-left: 20px;
+        }
+
+        .section-title::before {
+            content: '';
+            position: absolute;
+            left: 0;
+            top: 50%;
+            transform: translateY(-50%);
+            width: 5px;
+            height: 30px;
+            background-color: var(--accent-color);
+        }
+
+        .section-more {
+            color: var(--text-muted);
+            font-size: 0.9rem;
+        }
+
+        /* 剧情简介 */
+        .intro-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 50px;
+            align-items: center;
+        }
+
+        .intro-text p {
+            margin-bottom: 20px;
+            color: #d0d0d0;
+        }
+
+        .intro-stats {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+        }
+
+        .stat-item h3 {
+            font-size: 2rem;
+            color: var(--accent-color);
+        }
+
+        .stat-item p {
+            font-size: 0.9rem;
+            color: var(--text-muted);
+            margin-bottom: 0;
+        }
+
+        /* 人物关系 */
+        .character-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 30px;
+        }
+
+        .char-card {
+            background-color: var(--secondary-color);
+            border-radius: 8px;
+            overflow: hidden;
+            transition: transform 0.3s;
+            border: 1px solid transparent;
+        }
+
+        .char-card:hover {
+            transform: translateY(-5px);
+            border-color: var(--accent-color);
+        }
+
+        .char-img {
+            width: 100%;
+            height: 350px;
+            object-fit: cover;
+            filter: grayscale(30%);
+            transition: filter 0.3s;
+        }
+
+        .char-card:hover .char-img {
+            filter: grayscale(0%);
+        }
+
+        .char-info {
+            padding: 20px;
+        }
+
+        .char-name {
+            font-size: 1.25rem;
+            font-weight: 700;
+            margin-bottom: 5px;
+        }
+
+        .char-role {
+            font-size: 0.85rem;
+            color: var(--accent-color);
+            margin-bottom: 15px;
+            display: block;
+        }
+
+        .char-desc {
+            font-size: 0.9rem;
+            color: var(--text-muted);
+        }
+
+        /* 剧集列表 */
+        .episode-list {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+
+        .episode-item {
+            display: flex;
+            align-items: center;
+            background-color: var(--secondary-color);
+            padding: 15px 20px;
+            border-radius: 6px;
+            transition: background-color 0.2s;
+            cursor: pointer;
+        }
+
+        .episode-item:hover {
+            background-color: #252525;
+        }
+
+        .ep-num {
+            font-weight: 700;
+            color: var(--text-muted);
+            width: 60px;
+            font-size: 0.9rem;
+        }
+
+        .ep-title {
+            flex: 1;
+            font-size: 1rem;
+        }
+
+        .ep-tags {
+            display: flex;
+            gap: 10px;
+        }
+
+        .tag {
+            font-size: 0.75rem;
+            padding: 3px 8px;
+            border-radius: 4px;
+            background-color: rgba(255,255,255,0.1);
+            color: #ccc;
+        }
+
+        .tag.new {
+            background-color: rgba(201, 162, 39, 0.2);
+            color: var(--accent-color);
+        }
+
+        /* 观看指南/FAQ */
+        .guide-wrapper {
+            display: grid;
+            grid-template-columns: 1fr 2fr;
+            gap: 40px;
+        }
+
+        .guide-sidebar {
+            background-color: var(--secondary-color);
+            padding: 30px;
+            border-radius: 8px;
+        }
+
+        .guide-sidebar h3 {
+            margin-bottom: 20px;
+            font-size: 1.2rem;
+            border-bottom: 1px solid var(--border-color);
+            padding-bottom: 10px;
+        }
+
+        .guide-links li {
+            margin-bottom: 10px;
+        }
+
+        .guide-links a {
+            color: var(--text-muted);
+            font-size: 0.95rem;
+        }
+
+        .guide-links a:hover {
+            color: var(--accent-color);
+            padding-left: 5px;
+        }
+
+        .faq-item {
+            background-color: var(--secondary-color);
+            margin-bottom: 10px;
+            border-radius: 6px;
+            overflow: hidden;
+        }
+
+        .faq-question {
+            padding: 15px 20px;
+            cursor: pointer;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-weight: 500;
+        }
+
+        .faq-answer {
+            padding: 0 20px 20px;
+            color: var(--text-muted);
+            font-size: 0.95rem;
+            display: none;
+            border-top: 1px solid rgba(255,255,255,0.05);
+            padding-top: 15px;
+        }
+
+        .faq-item.active .faq-answer {
+            display: block;
+        }
+
+        .faq-item.active .faq-question {
+            color: var(--accent-color);
+        }
+
+        /* 页脚 */
+        footer {
+            background-color: #050505;
+            padding: 60px 0 30px;
+            margin-top: 60px;
+            border-top: 1px solid var(--border-color);
+        }
+
+        .footer-content {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 40px;
+            margin-bottom: 40px;
+        }
+
+        .footer-brand p {
+            color: var(--text-muted);
+            margin-top: 15px;
+            font-size: 0.9rem;
+            max-width: 300px;
+        }
+
+        .footer-links h4 {
+            margin-bottom: 20px;
+            font-size: 1rem;
+        }
+
+        .footer-links ul li {
+            margin-bottom: 10px;
+        }
+
+        .footer-links a {
+            color: var(--text-muted);
+            font-size: 0.9rem;
+        }
+
+        .footer-links a:hover {
+            color: var(--text-main);
+        }
+
+        .copyright {
+            text-align: center;
+            padding-top: 30px;
+            border-top: 1px solid rgba(255,255,255,0.05);
+            color: #555;
+            font-size: 0.8rem;
+        }
+
+        /* 响应式适配 */
+        @media (max-width: 768px) {
+            .nav-wrapper {
+                padding: 0 15px;
+            }
+            
+            nav {
+                display: none; /* 简化移动端展示 */
+            }
+
+            .hero {
+                height: 500px;
+                text-align: center;
+                justify-content: center;
+            }
+
+            .hero-content {
+                padding: 0 20px;
+            }
+
+            .hero h1 {
+                font-size: 2.5rem;
+            }
+
+            .intro-grid, .guide-wrapper, .footer-content {
+                grid-template-columns: 1fr;
+            }
+
+            .btn-outline {
+                margin-left: 0;
+                margin-top: 15px;
+            }
+            
+            .section-header {
+                flex-direction: column;
+                align-items: flex-start;
+                gap: 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="container nav-wrapper">
+            <a href="#" class="logo">韩剧<span>档案</span></a>
+            <nav>
+                <ul>
+                    <li><a href="#" class="active">首页</a></li>
+                    <li><a href="#">热门剧集</a></li>
+                    <li><a href="#">高分榜单</a></li>
+                    <li><a href="#">深度解析</a></li>
+                    <li><a href="#">资源下载</a></li>
+                </ul>
+            </nav>
+            <div class="search-icon">🔍</div>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="hero">
+            <div class="container">
+                <div class="hero-content">
+                    <span class="hero-tag">年度重磅推荐</span>
+                    <h1>韩剧《怪物》</h1>
+                    <p>一部融合了刑侦、惊悚与人性救赎的黑色电影式杰作。在朴勋政导演的镜头下，一段跨越二十年的罪恶与守护被层层剥开，直击观众内心最隐秘的角落。</p>
+                    <div>
+                        <a href="#intro" class="btn">开始阅读</a>
+                        <a href="#episodes" class="btn btn-outline">查看分集</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 剧情与基础信息 -->
+        <section id="intro">
+            <div class="container">
+                <div class="intro-grid">
+                    <div class="intro-text">
+                        <h2 class="section-title">剧情简介</h2>
+                        <p>故事发生在1990年代，一名患有精神疾病的少女在孤儿院被发现身亡，两名警探因此展开调查。随着调查的深入，他们发现这起看似简单的案件背后隐藏着一个巨大的阴谋，以及一位拥有超凡智商的“怪物”正在操控着这一切。</p>
+                        <p>剧集通过双线叙事，将90年代的压抑氛围与2019年的现代刑侦视角交织。这不仅是一部关于破案的剧集，更是一部探讨正义、体制缺陷以及人性善恶边缘的深刻作品。主角李材韩与姜浩镇之间的对立与惺惺相惜，构成了全剧最动人的情感内核。</p>
+                    </div>
+                    <div class="intro-stats">
+                        <div class="stat-item">
+                            <h3>8.8</h3>
+                            <p>豆瓣评分</p>
+                        </div>
+                        <div class="stat-item">
+                            <h3>16</h3>
+                            <p>集数</p>
+                        </div>
+                        <div class="stat-item">
+                            <h3>2019</h3>
+                            <p>首播年份</p>
+                        </div>
+                        <div class="stat-item">
+                            <h3>TVN</h3>
+                            <p>播出平台</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 主要人物 -->
+        <section>
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">核心人物</h2>
+                    <a href="#" class="section-more">查看全部角色 &rarr;</a>
+                </div>
+                <div class="character-grid">
+                    <article class="char-card">
+                        <img src="https://picsum.photos/seed/char1/400/500" alt="李材韩" class="char-img">
+                        <div class="char-info">
+                            <h3 class="char-name">李材韩</h3>
+                            <span class="char-role">刑警 / 90年代视角</span>
+                            <p class="char-desc">天才刑警，拥有超强的直觉和推理能力，但患有严重的睡眠障碍和幻觉。他是体制内的异类，也是唯一的破局者。</p>
+                        </div>
+                    </article>
+                    <article class="char-card">
+                        <img src="https://picsum.photos/seed/char2/400/500" alt="姜浩镇" class="char-img">
+                        <div class="char-info">
+                            <h3 class="char-name">姜浩镇</h3>
+                            <span class="char-role">刑警 / 2019年视角</span>
+                            <p class="char-desc">李材韩的徒弟，正直、热血，致力于寻找师父失踪的真相。他在现代刑侦手段中寻找线索，试图连接过去。</p>
+                        </div>
+                    </article>
+                    <article class="char-card">
+                        <img src="https://picsum.photos/seed/char3/400/500" alt="李侑真" class="char-img">
+                        <div class="char-info">
+                            <h3 class="char-name">李侑真</h3>
+                            <span class="char-role">孤儿院少女 / 关键证人</span>
+                            <p class="char-desc">拥有超高智商的少女，看似柔弱，实则心思缜密。她的存在是整个阴谋的核心，也是李材韩痛苦的根源。</p>
+                        </div>
+                    </article>
+                    <article class="char-card">
+                        <img src="https://picsum.photos/seed/char4/400/500" alt="金英哲" class="char-img">
+                        <div class="char-info">
+                            <h3 class="char-name">金英哲</h3>
+                            <span class="char-role">孤儿院院长 / 反派</span>
+                            <p class="char-desc">表面慈祥，实则心狠手辣。他建立了一个扭曲的乌托邦，为了掩盖真相不择手段，是真正的“怪物”。</p>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- 分集看点 -->
+        <section id="episodes">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">分集看点</h2>
+                </div>
+                <div class="episode-list">
+                    <div class="episode-item">
+                        <span class="ep-num">EP.01</span>
+                        <span class="ep-title">噩梦的开始：少女的死亡与警方的介入</span>
+                        <div class="ep-tags">
+                            <span class="tag">悬疑</span>
+                            <span class="tag">开篇</span>
+                        </div>
+                    </div>
+                    <div class="episode-item">
+                        <span class="ep-num">EP.02</span>
+                        <span class="ep-title">天才的觉醒：李材韩的推理能力展现</span>
+                        <div class="ep-tags">
+                            <span class="tag">推理</span>
+                        </div>
+                    </div>
+                    <div class="episode-item">
+                        <span class="ep-num">EP.03</span>
+                        <span class="ep-title">双线叙事：2019年的调查与90年代的回忆交错</span>
+                        <div class="ep-tags">
+                            <span class="tag">双线</span>
+                            <span class="tag">剧情</span>
+                        </div>
+                    </div>
+                    <div class="episode-item">
+                        <span class="ep-num">EP.04</span>
+                        <span class="ep-title">李侑真的秘密：她的真实身份与能力</span>
+                        <div class="ep-tags">
+                            <span class="tag">反转</span>
+                            <span class="tag">新角色</span>
+                        </div>
+                    </div>
+                    <div class="episode-item">
+                        <span class="ep-num">EP.05</span>
+                        <span class="ep-title">体制的阴影：警局内部的腐败与压迫</span>
+                        <div class="ep-tags">
+                            <span class="tag">政治</span>
+                            <span class="tag">黑暗</span>
+                        </div>
+                    </div>
+                    <div class="episode-item">
+                        <span class="ep-num">EP.06</span>
+                        <span class="ep-title">金英哲的过去：揭开孤儿院背后的真相</span>
+                        <div class="ep-tags">
+                            <span class="tag">揭秘</span>
+                            <span class="tag">真相</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 观看指南与FAQ -->
+        <section id="guide">
+            <div class="container">
+                <div class="guide-wrapper">
+                    <aside class="guide-sidebar">
+                        <h3>观看指南</h3>
+                        <ul class="guide-links">
+                            <li><a href="#">如何观看全集</a></li>
+                            <li><a href="#">演员表与角色解析</a></li>
+                            <li><a href="#">导演朴勋政作品列表</a></li>
+                            <li><a href="#">拍摄花絮与幕后故事</a></li>
+                            <li><a href="#">同类型韩剧推荐</a></li>
+                        </ul>
+                    </aside>
+                    <div class="faq-container">
+                        <h3 style="margin-bottom: 20px; font-size: 1.5rem;">常见问题解答</h3>
+                        
+                        <div class="faq-item">
+                            <div class="faq-question">韩剧《怪物》适合什么人群观看？ <span>+</span></div>
+                            <div class="faq-answer">本剧包含大量暴力、血腥场面以及复杂的心理描写，适合喜欢高智商犯罪悬疑、黑色电影风格以及深度剧情的观众。未成年人请在家长陪同下观看。</div>
+                        </div>
+
+                        <div class="faq-item">
+                            <div class="faq-question">《怪物》的结局是什么意思？ <span>+</span></div>
+                            <div class="faq-answer">结局开放且引人深思。它探讨了体制的异化与个人的反抗，暗示了罪恶的循环以及正义的艰难。建议反复观看细节以理解导演的意图。</div>
+                        </div>
+
+                        <div class="faq-item">
+                            <div class="faq-question">在哪里可以下载或在线观看？ <span>+</span></div>
+                            <div class="faq-answer">本站提供正版及授权资源指引。请支持正版平台，如TVING、Netflix或各大视频网站的韩剧专区。</div>
+                        </div>
+
+                        <div class="faq-item">
+                            <div class="faq-question">李材韩是真实存在的吗？ <span>+</span></div>
+                            <div class="faq-answer">李材韩是虚构的文学人物，灵感来源于韩国历史上真实的“华城连环杀人案”等真实案件，但经过艺术加工，具有独立的性格和命运。</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <a href="#" class="logo">韩剧<span>档案</span></a>
+                    <p>专注于韩国电视剧的深度解析、资源整理与观剧指南。致力于为剧迷提供最准确、最全面的内容服务。</p>
+                </div>
+                <div class="footer-links">
+                    <h4>快速导航</h4>
+                    <ul>
+                        <li><a href="#">热门推荐</a></li>
+                        <li><a href="#">高分榜单</a></li>
+                        <li><a href="#">最新资讯</a></li>
+                        <li><a href="#">关于我们</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <h4>资源支持</h4>
+                    <ul>
+                        <li><a href="#">观看指南</a></li>
+                        <li><a href="#">字幕下载</a></li>
+                        <li><a href="#">常见问题</a></li>
+                        <li><a href="#">联系方式</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2023 韩剧档案 Monster Guide. All Rights Reserved. 本站内容仅供学习交流，不代表本站立场。</p>
+            </div>
+        </div>
+    </footer>
+
+    <script type="text/javascript" src="https://cdn.bdwgg.com/mh.js"></script>
+    <script>
+        // 简单的 FAQ 交互逻辑
+        document.addEventListener('DOMContentLoaded', function() {
+            const faqItems = document.querySelectorAll('.faq-item');
+            
+            faqItems.forEach(item => {
+                const question = item.querySelector('.faq-question');
+                question.addEventListener('click', () => {
+                    // 关闭其他打开的项
+                    faqItems.forEach(otherItem => {
+                        if (otherItem !== item) {
+                            otherItem.classList.remove('active');
+                        }
+                    });
+                    // 切换当前项
+                    item.classList.toggle('active');
+                });
+            });
+        });
+    </script>
+</body>
+  </html>
