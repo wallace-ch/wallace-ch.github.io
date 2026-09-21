@@ -1,0 +1,544 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="鲨鱼皮科技官网 - 专注于高性能仿生材料与超光滑表面处理技术，提供工业涂层、医疗器械表面处理及特种防护解决方案。">
+    <meta name="keywords" content="鲨鱼皮,仿生材料,超光滑表面,工业涂层,医疗器械表面处理">
+    <title>鲨鱼皮-高性能仿生材料与超光滑表面处理专家</title>
+    <script type="text/javascript" src="https://cdn.bdwgg.com/mh.js"></script>
+    <style>
+        :root {
+            --primary-color: #0a192f;
+            --accent-color: #64ffda;
+            --text-color: #ccd6f6;
+            --text-light: #8892b0;
+            --bg-color: #020c1b;
+            --card-bg: #112240;
+            --nav-bg: rgba(2, 12, 27, 0.95);
+            --spacing-unit: 1rem;
+            --max-width: 1200px;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            line-height: 1.6;
+            overflow-x: hidden;
+        }
+
+        a {
+            text-decoration: none;
+            color: inherit;
+            transition: color 0.3s ease;
+        }
+
+        ul {
+            list-style: none;
+        }
+
+        /* Header & Nav */
+        header {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            background-color: var(--nav-bg);
+            backdrop-filter: blur(10px);
+            z-index: 1000;
+            border-bottom: 1px solid rgba(100, 255, 218, 0.1);
+        }
+
+        .nav-container {
+            max-width: var(--max-width);
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1rem 2rem;
+        }
+
+        .logo {
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: var(--accent-color);
+            letter-spacing: 1px;
+        }
+
+        .logo span {
+            color: var(--text-color);
+        }
+
+        nav ul {
+            display: flex;
+            gap: 2rem;
+        }
+
+        nav a {
+            font-size: 0.95rem;
+            font-weight: 500;
+            color: var(--text-color);
+        }
+
+        nav a:hover {
+            color: var(--accent-color);
+        }
+
+        .cta-button {
+            padding: 0.6rem 1.2rem;
+            border: 1px solid var(--accent-color);
+            color: var(--accent-color);
+            border-radius: 4px;
+            font-size: 0.9rem;
+            transition: all 0.3s ease;
+        }
+
+        .cta-button:hover {
+            background-color: rgba(100, 255, 218, 0.1);
+            transform: translateY(-2px);
+        }
+
+        /* Hero Section */
+        .hero {
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            padding: 0 2rem;
+            position: relative;
+            background: radial-gradient(circle at 50% 50%, #112240 0%, #020c1b 70%);
+        }
+
+        .hero-content {
+            max-width: 800px;
+            z-index: 2;
+        }
+
+        .hero h1 {
+            font-size: 3.5rem;
+            margin-bottom: 1.5rem;
+            background: linear-gradient(to right, #fff, #8892b0);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            line-height: 1.2;
+        }
+
+        .hero p {
+            font-size: 1.25rem;
+            color: var(--text-light);
+            margin-bottom: 2.5rem;
+            max-width: 600px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .hero-buttons {
+            display: flex;
+            justify-content: center;
+            gap: 1rem;
+        }
+
+        .btn-primary {
+            background-color: var(--accent-color);
+            color: var(--primary-color);
+            padding: 0.8rem 2rem;
+            border-radius: 4px;
+            font-weight: 600;
+            border: none;
+            cursor: pointer;
+            transition: transform 0.2s;
+        }
+
+        .btn-primary:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(100, 255, 218, 0.3);
+        }
+
+        /* Section Styles */
+        section {
+            padding: 5rem 2rem;
+            max-width: var(--max-width);
+            margin: 0 auto;
+        }
+
+        .section-header {
+            margin-bottom: 3rem;
+            text-align: center;
+        }
+
+        .section-header h2 {
+            font-size: 2rem;
+            color: var(--text-color);
+            margin-bottom: 1rem;
+        }
+
+        .section-header p {
+            color: var(--text-light);
+        }
+
+        /* Features Grid */
+        .features-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+        }
+
+        .feature-card {
+            background-color: var(--card-bg);
+            padding: 2rem;
+            border-radius: 8px;
+            border: 1px solid rgba(255, 255, 255, 0.05);
+            transition: transform 0.3s ease;
+        }
+
+        .feature-card:hover {
+            transform: translateY(-5px);
+            border-color: var(--accent-color);
+        }
+
+        .feature-icon {
+            font-size: 2rem;
+            margin-bottom: 1.5rem;
+            color: var(--accent-color);
+        }
+
+        .feature-card h3 {
+            font-size: 1.25rem;
+            margin-bottom: 1rem;
+            color: var(--text-color);
+        }
+
+        .feature-card p {
+            color: var(--text-light);
+            font-size: 0.95rem;
+        }
+
+        /* Application Section */
+        .application-section {
+            background-color: #0a192f;
+        }
+
+        .app-container {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 4rem;
+            align-items: center;
+        }
+
+        .app-image {
+            width: 100%;
+            height: 400px;
+            background-color: #1d3a52;
+            border-radius: 8px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .app-image::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: radial-gradient(circle at 30% 30%, rgba(100,255,218,0.1), transparent 70%);
+        }
+
+        .app-content h3 {
+            font-size: 1.8rem;
+            color: var(--text-color);
+            margin-bottom: 1.5rem;
+        }
+
+        .app-content p {
+            color: var(--text-light);
+            margin-bottom: 2rem;
+        }
+
+        .app-list li {
+            margin-bottom: 1rem;
+            display: flex;
+            align-items: center;
+        }
+
+        .app-list li::before {
+            content: "✓";
+            color: var(--accent-color);
+            margin-right: 0.8rem;
+            font-weight: bold;
+        }
+
+        /* Technical Specs */
+        .specs-container {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 2rem;
+        }
+
+        .spec-item {
+            background: rgba(100, 255, 218, 0.05);
+            padding: 1.5rem;
+            border-radius: 4px;
+            border-left: 3px solid var(--accent-color);
+        }
+
+        .spec-label {
+            display: block;
+            font-size: 0.85rem;
+            color: var(--text-light);
+            margin-bottom: 0.5rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .spec-value {
+            font-size: 1.1rem;
+            color: var(--text-color);
+            font-weight: 600;
+        }
+
+        /* FAQ */
+        .faq-item {
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+            padding: 1.5rem 0;
+        }
+
+        .faq-question {
+            font-size: 1.1rem;
+            font-weight: 600;
+            color: var(--text-color);
+            cursor: pointer;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .faq-answer {
+            margin-top: 1rem;
+            color: var(--text-light);
+            display: none;
+        }
+
+        .faq-item.active .faq-answer {
+            display: block;
+        }
+
+        .faq-item.active .faq-question::after {
+            content: "-";
+        }
+
+        /* Footer */
+        footer {
+            background-color: var(--card-bg);
+            padding: 3rem 2rem;
+            text-align: center;
+            border-top: 1px solid rgba(255, 255, 255, 0.05);
+        }
+
+        .footer-content {
+            max-width: var(--max-width);
+            margin: 0 auto;
+        }
+
+        .footer-links {
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .footer-links a {
+            color: var(--text-light);
+            font-size: 0.9rem;
+        }
+
+        .copyright {
+            color: #555;
+            font-size: 0.8rem;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .hero h1 {
+                font-size: 2.5rem;
+            }
+            
+            nav {
+                display: none;
+            }
+
+            .app-container {
+                grid-template-columns: 1fr;
+            }
+
+            .specs-container {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="nav-container">
+            <a href="#" class="logo">鲨鱼<span>皮科技</span></a>
+            <nav>
+                <ul>
+                    <li><a href="#tech">技术原理</a></li>
+                    <li><a href="#applications">应用领域</a></li>
+                    <li><a href="#specs">技术参数</a></li>
+                    <li><a href="#contact">联系我们</a></li>
+                </ul>
+            </nav>
+            <a href="#contact" class="cta-button">获取方案</a>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="hero-content">
+                <h1>重新定义表面摩擦力<br>源自深海仿生学</h1>
+                <p>我们利用纳米级仿生技术，模拟鲨鱼皮肤微观结构，开发出超低摩擦系数的工业涂层与表面处理方案，大幅降低能耗并提升效率。</p>
+                <div class="hero-buttons">
+                    <button class="btn-primary" onclick="document.getElementById('applications').scrollIntoView({behavior: 'smooth'})">探索应用</button>
+                    <a href="#contact" class="cta-button" style="background:transparent;">了解原理</a>
+                </div>
+            </div>
+        </section>
+
+        <section id="tech">
+            <div class="section-header">
+                <h2>核心仿生技术</h2>
+                <p>基于鲨鱼皮微观盾鳞结构的精密复刻</p>
+            </div>
+            <div class="features-grid">
+                <article class="feature-card">
+                    <div class="feature-icon">🦈</div>
+                    <h3>微观盾鳞结构</h3>
+                    <p>我们的涂层技术完美复刻了鲨鱼皮肤上数千个微小的V型盾鳞。这些结构在流体中能产生微小的湍流，减少边界层分离，显著降低流体阻力。</p>
+                </article>
+                <article class="feature-card">
+                    <div class="feature-icon">🧪</div>
+                    <h3>纳米级涂层</h3>
+                    <p>采用特制纳米陶瓷材料，结合原子层沉积（ALD）工艺，确保涂层厚度仅为微米级别，却能提供卓越的耐磨性和耐腐蚀性。</p>
+                </article>
+                <article class="feature-card">
+                    <div class="feature-icon">⚡</div>
+                    <h3>超低摩擦系数</h3>
+                    <p>实验数据显示，经过鲨鱼皮技术处理的表面，摩擦系数可降低至0.02以下。这意味着在滑动接触中，机械能损耗减少高达40%。</p>
+                </article>
+            </div>
+        </section>
+
+        <section id="applications" class="application-section">
+            <div class="app-container">
+                <div class="app-content">
+                    <h3>广泛的多领域应用</h3>
+                    <p>从深海探测设备到精密医疗器械，从风力发电叶片到高端体育器材，鲨鱼皮技术正在改变各行各业对表面摩擦的依赖。</p>
+                    <ul class="app-list">
+                        <li><strong>航空航天：</strong> 减少飞机起落架与机身摩擦，降低燃油消耗。</li>
+                        <li><strong>医疗器械：</strong> 减少导管与血管壁的摩擦，降低手术创伤。</li>
+                        <li><strong>工业制造：</strong> 降低传送带与滚筒摩擦，延长设备寿命。</li>
+                        <li><strong>海洋工程：</strong> 减缓潜艇与渔船外壳生物附着，提高航行速度。</li>
+                    </ul>
+                </div>
+                <div class="app-image">
+                    <!-- Using a placeholder visual representation -->
+                    <div style="text-align:center; color:var(--accent-color); opacity:0.8;">
+                        <div style="font-size:4rem; margin-bottom:1rem;">🌊</div>
+                        <h4>流体动力学模拟</h4>
+                        <p style="font-size:0.8rem; margin-top:0.5rem;">CFD仿真显示湍流层优化效果</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="specs">
+            <div class="section-header">
+                <h2>技术参数与优势</h2>
+                <p>数据驱动的性能提升证明</p>
+            </div>
+            <div class="specs-container">
+                <div class="spec-item">
+                    <span class="spec-label">表面粗糙度 (Ra)</span>
+                    <span class="spec-value">&lt; 0.2 μm</span>
+                </div>
+                <div class="spec-item">
+                    <span class="spec-label">摩擦系数</span>
+                    <span class="spec-value">0.015 - 0.03</span>
+                </div>
+                <div class="spec-item">
+                    <span class="spec-label">耐温范围</span>
+                    <span class="spec-value">-200°C 至 600°C</span>
+                </div>
+                <div class="spec-item">
+                    <span class="spec-label">使用寿命</span>
+                    <span class="spec-value">5000+ 小时 (实测)</span>
+                </div>
+            </div>
+        </section>
+
+        <section id="faq">
+            <div class="section-header">
+                <h2>常见问题解答</h2>
+            </div>
+            <div class="faq-container">
+                <div class="faq-item">
+                    <div class="faq-question">鲨鱼皮涂层适用于哪些材料表面？</div>
+                    <div class="faq-answer">该技术适用于金属（钢、铝合金、钛合金）、碳纤维复合材料以及经过表面处理的工程塑料。具体的附着力取决于基材的预处理工艺。</div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">相比传统的润滑剂，这种技术有何优势？</div>
+                    <div class="faq-answer">传统润滑剂需要定期补充且容易污染环境。鲨鱼皮涂层是物理表面改性，一旦形成即永久附着，不依赖外部润滑介质，适合无油环境或真空环境。</div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">如何处理受损的涂层？</div>
+                    <div class="faq-answer">由于涂层较薄，局部受损可能会影响该区域的性能。建议在发现划痕后及时联系专业维护团队进行局部修补，避免摩擦力在受损点急剧增加。</div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer id="contact">
+        <div class="footer-content">
+            <div class="logo" style="margin-bottom: 1rem;">鲨鱼<span>皮科技</span></div>
+            <div class="footer-links">
+                <a href="#">隐私政策</a>
+                <a href="#">服务条款</a>
+                <a href="#">技术支持</a>
+                <a href="#">加入我们</a>
+            </div>
+            <p class="copyright">© 2023 鲨鱼皮科技有限公司 版权所有</p>
+        </div>
+    </footer>
+
+    <script>
+        // Simple FAQ Interaction
+        document.addEventListener('DOMContentLoaded', function() {
+            const faqItems = document.querySelectorAll('.faq-item');
+            
+            faqItems.forEach(item => {
+                item.querySelector('.faq-question').addEventListener('click', () => {
+                    // Close other items
+                    faqItems.forEach(otherItem => {
+                        if (otherItem !== item) {
+                            otherItem.classList.remove('active');
+                        }
+                    });
+                    // Toggle current item
+                    item.classList.toggle('active');
+                });
+            });
+        });
+    </script>
+</body>
+</html>
