@@ -1,0 +1,771 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>伊通进修-专业职业资格认证与技能提升培训平台</title>
+    <meta name="description" content="伊通进修平台提供各类职业资格证书培训、专业技能提升课程及继续教育服务。涵盖会计、建筑、教育、医学等多个领域，助您实现职业晋升与自我突破。">
+    <meta name="keywords" content="伊通进修,职业资格认证,继续教育,技能培训,在线学习,职业提升">
+    <script type="text/javascript" src="https://cdn.bdwgg.com/mh.js"></script>
+    <style>
+        :root {
+            --primary-color: #2563eb;
+            --primary-dark: #1e40af;
+            --secondary-color: #0f172a;
+            --accent-color: #f59e0b;
+            --bg-light: #f8fafc;
+            --text-main: #334155;
+            --text-light: #64748b;
+            --white: #ffffff;
+            --border-radius: 8px;
+            --shadow-sm: 0 1px 3px rgba(0,0,0,0.1);
+            --shadow-md: 0 4px 6px -1px rgba(0,0,0,0.1);
+            --container-width: 1200px;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans SC", sans-serif;
+            line-height: 1.6;
+            color: var(--text-main);
+            background-color: var(--bg-light);
+        }
+
+        a {
+            text-decoration: none;
+            color: inherit;
+            transition: color 0.2s;
+        }
+
+        ul {
+            list-style: none;
+        }
+
+        .container {
+            max-width: var(--container-width);
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        /* Header */
+        header {
+            background-color: var(--white);
+            box-shadow: var(--shadow-sm);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .header-inner {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            height: 70px;
+        }
+
+        .logo {
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: var(--primary-color);
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .logo span {
+            color: var(--secondary-color);
+        }
+
+        nav ul {
+            display: flex;
+            gap: 30px;
+        }
+
+        nav a {
+            font-weight: 500;
+            color: var(--text-main);
+        }
+
+        nav a:hover {
+            color: var(--primary-color);
+        }
+
+        .header-actions {
+            display: flex;
+            gap: 15px;
+        }
+
+        .btn {
+            padding: 8px 20px;
+            border-radius: var(--border-radius);
+            font-weight: 500;
+            cursor: pointer;
+            transition: all 0.2s;
+            border: none;
+            font-size: 0.95rem;
+        }
+
+        .btn-outline {
+            background: transparent;
+            border: 1px solid var(--primary-color);
+            color: var(--primary-color);
+        }
+
+        .btn-outline:hover {
+            background: var(--primary-color);
+            color: var(--white);
+        }
+
+        .btn-primary {
+            background: var(--primary-color);
+            color: var(--white);
+        }
+
+        .btn-primary:hover {
+            background: var(--primary-dark);
+        }
+
+        /* Hero Section */
+        .hero {
+            background: linear-gradient(135deg, var(--secondary-color) 0%, var(--primary-dark) 100%);
+            color: var(--white);
+            padding: 80px 0;
+            text-align: center;
+        }
+
+        .hero h1 {
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+            font-weight: 800;
+        }
+
+        .hero p {
+            font-size: 1.2rem;
+            opacity: 0.9;
+            max-width: 700px;
+            margin: 0 auto 40px;
+        }
+
+        .hero-stats {
+            display: flex;
+            justify-content: center;
+            gap: 50px;
+            margin-top: 40px;
+            flex-wrap: wrap;
+        }
+
+        .stat-item strong {
+            display: block;
+            font-size: 2rem;
+            color: var(--accent-color);
+        }
+
+        .stat-item span {
+            font-size: 0.9rem;
+            opacity: 0.8;
+        }
+
+        /* Categories */
+        .section {
+            padding: 60px 0;
+        }
+
+        .section-header {
+            text-align: center;
+            margin-bottom: 50px;
+        }
+
+        .section-header h2 {
+            font-size: 2rem;
+            color: var(--secondary-color);
+            margin-bottom: 15px;
+        }
+
+        .section-header p {
+            color: var(--text-light);
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        .category-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 30px;
+        }
+
+        .category-card {
+            background: var(--white);
+            padding: 30px;
+            border-radius: var(--border-radius);
+            box-shadow: var(--shadow-sm);
+            text-align: center;
+            transition: transform 0.3s, box-shadow 0.3s;
+            border: 1px solid #e2e8f0;
+        }
+
+        .category-card:hover {
+            transform: translateY(-5px);
+            box-shadow: var(--shadow-md);
+            border-color: var(--primary-color);
+        }
+
+        .category-icon {
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+            display: block;
+        }
+
+        .category-card h3 {
+            margin-bottom: 10px;
+            color: var(--secondary-color);
+        }
+
+        .category-card p {
+            color: var(--text-light);
+            font-size: 0.9rem;
+            margin-bottom: 20px;
+        }
+
+        .course-count {
+            background: var(--bg-light);
+            padding: 4px 12px;
+            border-radius: 20px;
+            font-size: 0.8rem;
+            color: var(--primary-color);
+            font-weight: 600;
+        }
+
+        /* Popular Courses */
+        .course-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 30px;
+        }
+
+        .course-card {
+            background: var(--white);
+            border-radius: var(--border-radius);
+            overflow: hidden;
+            box-shadow: var(--shadow-sm);
+            transition: box-shadow 0.3s;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .course-card:hover {
+            box-shadow: var(--shadow-md);
+        }
+
+        .course-image {
+            height: 180px;
+            background-color: #cbd5e1;
+            position: relative;
+        }
+
+        .course-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .course-badge {
+            position: absolute;
+            top: 15px;
+            right: 15px;
+            background: rgba(0,0,0,0.7);
+            color: var(--white);
+            padding: 4px 10px;
+            border-radius: 4px;
+            font-size: 0.75rem;
+        }
+
+        .course-content {
+            padding: 20px;
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .course-meta {
+            font-size: 0.85rem;
+            color: var(--text-light);
+            margin-bottom: 10px;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .course-title {
+            font-size: 1.1rem;
+            font-weight: 600;
+            margin-bottom: 10px;
+            color: var(--secondary-color);
+            line-height: 1.4;
+        }
+
+        .course-desc {
+            font-size: 0.9rem;
+            color: var(--text-light);
+            margin-bottom: 20px;
+            flex: 1;
+        }
+
+        .course-footer {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-top: 1px solid #e2e8f0;
+            padding-top: 15px;
+        }
+
+        .price {
+            font-size: 1.2rem;
+            font-weight: 700;
+            color: var(--primary-color);
+        }
+
+        .price small {
+            font-size: 0.8rem;
+            font-weight: 400;
+            color: var(--text-light);
+        }
+
+        /* Why Choose Us */
+        .features {
+            background-color: var(--white);
+        }
+
+        .features-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 40px;
+        }
+
+        .feature-item {
+            text-align: center;
+        }
+
+        .feature-icon {
+            width: 60px;
+            height: 60px;
+            background: #eff6ff;
+            color: var(--primary-color);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 20px;
+            font-size: 1.5rem;
+        }
+
+        .feature-item h3 {
+            margin-bottom: 10px;
+            color: var(--secondary-color);
+        }
+
+        /* FAQ Section */
+        .faq-section {
+            background-color: #f1f5f9;
+        }
+
+        .faq-container {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .faq-item {
+            background: var(--white);
+            margin-bottom: 15px;
+            border-radius: var(--border-radius);
+            overflow: hidden;
+            box-shadow: var(--shadow-sm);
+        }
+
+        .faq-question {
+            padding: 20px;
+            cursor: pointer;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-weight: 600;
+            color: var(--secondary-color);
+        }
+
+        .faq-answer {
+            padding: 0 20px 20px;
+            color: var(--text-light);
+            display: none;
+        }
+
+        .faq-item.active .faq-answer {
+            display: block;
+        }
+
+        .faq-item.active .faq-question {
+            color: var(--primary-color);
+        }
+
+        /* Footer */
+        footer {
+            background-color: var(--secondary-color);
+            color: #94a3b8;
+            padding: 60px 0 20px;
+        }
+
+        .footer-grid {
+            display: grid;
+            grid-template-columns: 2fr 1fr 1fr 1.5fr;
+            gap: 40px;
+            margin-bottom: 40px;
+        }
+
+        .footer-col h4 {
+            color: var(--white);
+            margin-bottom: 20px;
+            font-size: 1.1rem;
+        }
+
+        .footer-col ul li {
+            margin-bottom: 10px;
+        }
+
+        .footer-col ul li a:hover {
+            color: var(--white);
+        }
+
+        .footer-bottom {
+            border-top: 1px solid #334155;
+            padding-top: 20px;
+            text-align: center;
+            font-size: 0.9rem;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .header-inner {
+                flex-direction: column;
+                height: auto;
+                padding: 15px 0;
+                gap: 15px;
+            }
+
+            nav ul {
+                gap: 15px;
+                font-size: 0.9rem;
+            }
+
+            .hero h1 {
+                font-size: 1.8rem;
+            }
+
+            .features-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .footer-grid {
+                grid-template-columns: 1fr;
+                text-align: center;
+            }
+
+            .course-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="container header-inner">
+            <a href="#" class="logo">
+                <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 10v6M2 10l10-5 10 5-10 5z"/><path d="M6 12v5c3 3 9 3 12 0v-5"/></svg>
+                <span>伊通</span>进修
+            </a>
+            <nav>
+                <ul>
+                    <li><a href="#">首页</a></li>
+                    <li><a href="#">职业资格</a></li>
+                    <li><a href="#">技能提升</a></li>
+                    <li><a href="#">继续教育</a></li>
+                    <li><a href="#">师资力量</a></li>
+                </ul>
+            </nav>
+            <div class="header-actions">
+                <a href="#" class="btn btn-outline">登录</a>
+                <a href="#" class="btn btn-primary">免费注册</a>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="hero">
+            <div class="container">
+                <h1>专业进修，成就职业未来</h1>
+                <p>提供权威的职业资格认证培训与技能提升课程，助力个人成长与企业人才发展。海量优质资源，助您高效通过考试，提升职场竞争力。</p>
+                <div style="display: flex; justify-content: center; gap: 15px;">
+                    <a href="#" class="btn btn-primary" style="background-color: var(--white); color: var(--primary-color);">浏览课程</a>
+                    <a href="#" class="btn btn-outline" style="border-color: var(--white); color: var(--white);">咨询客服</a>
+                </div>
+                <div class="hero-stats">
+                    <div class="stat-item">
+                        <strong>500+</strong>
+                        <span>合作机构</span>
+                    </div>
+                    <div class="stat-item">
+                        <strong>50万+</strong>
+                        <span>累计学员</span>
+                    </div>
+                    <div class="stat-item">
+                        <strong>98%</strong>
+                        <span>通过率</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Categories Section -->
+        <section class="section">
+            <div class="container">
+                <div class="section-header">
+                    <h2>热门进修领域</h2>
+                    <p>根据行业发展趋势，精选各类热门职业资格认证课程，满足不同阶段的学习需求。</p>
+                </div>
+                <div class="category-grid">
+                    <div class="category-card">
+                        <span class="category-icon">📊</span>
+                        <h3>会计财税</h3>
+                        <p>初级/中级/高级会计职称，CPA注册会计师，税务师等。</p>
+                        <span class="course-count">120+ 课程</span>
+                    </div>
+                    <div class="category-card">
+                        <span class="category-icon">🏗️</span>
+                        <h3>建筑工程</h3>
+                        <p>一级/二级建造师，造价工程师，监理工程师，安全工程师。</p>
+                        <span class="course-count">85+ 课程</span>
+                    </div>
+                    <div class="category-card">
+                        <span class="category-icon">🎓</span>
+                        <h3>教育考试</h3>
+                        <p>教师资格证，普通话水平测试，特岗教师，教师编制辅导。</p>
+                        <span class="course-count">60+ 课程</span>
+                    </div>
+                    <div class="category-card">
+                        <span class="category-icon">🩺</span>
+                        <h3>医药卫生</h3>
+                        <p>执业医师，执业药师，护士资格证，健康管理师，心理咨询师。</p>
+                        <span class="course-count">90+ 课程</span>
+                    </div>
+                    <div class="category-card">
+                        <span class="category-icon">💻</span>
+                        <h3>计算机技术</h3>
+                        <p>软考（程序员/架构师），PMP项目管理，数据分析，网络安全。</p>
+                        <span class="course-count">75+ 课程</span>
+                    </div>
+                    <div class="category-card">
+                        <span class="category-icon">⚖️</span>
+                        <h3>法律财经</h3>
+                        <p>法律职业资格，基金从业，证券从业，银行从业，期货从业。</p>
+                        <span class="course-count">50+ 课程</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Popular Courses Section -->
+        <section class="section" style="background-color: var(--white);">
+            <div class="container">
+                <div class="section-header">
+                    <h2>精选推荐课程</h2>
+                    <p>由行业资深专家打造，理论结合实践，助您系统掌握核心知识。</p>
+                </div>
+                <div class="course-grid">
+                    <!-- Course 1 -->
+                    <article class="course-card">
+                        <div class="course-image">
+                            <img src="https://picsum.photos/seed/accounting/400/250" alt="初级会计职称精讲班">
+                            <span class="course-badge">直播课</span>
+                        </div>
+                        <div class="course-content">
+                            <div class="course-meta">
+                                <span>会计财税</span>
+                                <span>32课时</span>
+                            </div>
+                            <h3 class="course-title">2024年初级会计职称精讲班（零基础通关）</h3>
+                            <p class="course-desc">系统讲解经济法基础与初级会计实务，名师带练，直击考点，助您轻松拿证。</p>
+                            <div class="course-footer">
+                                <div class="price"><small>¥</small>299</div>
+                                <a href="#" class="btn btn-outline" style="padding: 5px 15px; font-size: 0.85rem;">查看详情</a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Course 2 -->
+                    <article class="course-card">
+                        <div class="course-image">
+                            <img src="https://picsum.photos/seed/architecture/400/250" alt="一级建造师实务课">
+                            <span class="course-badge">录播</span>
+                        </div>
+                        <div class="course-content">
+                            <div class="course-meta">
+                                <span>建筑工程</span>
+                                <span>128课时</span>
+                            </div>
+                            <h3 class="course-title">一级建造师《建筑工程实务》全程通关班</h3>
+                            <p class="course-desc">涵盖项目管理、技术实务及案例分析，历年真题深度解析，实战演练。</p>
+                            <div class="course-footer">
+                                <div class="price"><small>¥</small>599</div>
+                                <a href="#" class="btn btn-outline" style="padding: 5px 15px; font-size: 0.85rem;">查看详情</a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Course 3 -->
+                    <article class="course-card">
+                        <div class="course-image">
+                            <img src="https://picsum.photos/seed/teacher/400/250" alt="教师资格证笔试">
+                            <span class="course-badge">热销</span>
+                        </div>
+                        <div class="course-content">
+                            <div class="course-meta">
+                                <span>教育考试</span>
+                                <span>45课时</span>
+                            </div>
+                            <h3 class="course-title">中小学教师资格证笔试笔试全科协议班</h3>
+                            <p class="course-desc">科目一（综合素质）与科目二（教育知识与能力）深度剖析，面试技巧指导。</p>
+                            <div class="course-footer">
+                                <div class="price"><small>¥</small>399</div>
+                                <a href="#" class="btn btn-outline" style="padding: 5px 15px; font-size: 0.85rem;">查看详情</a>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+                <div style="text-align: center; margin-top: 40px;">
+                    <a href="#" class="btn btn-primary">查看全部课程</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Features Section -->
+        <section class="section features">
+            <div class="container">
+                <div class="section-header">
+                    <h2>为什么选择伊通进修？</h2>
+                    <p>我们致力于提供最优质的继续教育服务，关注每一位学员的通过率与职业发展。</p>
+                </div>
+                <div class="features-grid">
+                    <div class="feature-item">
+                        <div class="feature-icon">🎓</div>
+                        <h3>名师团队</h3>
+                        <p>汇聚行业顶尖专家与资深讲师，授课经验丰富，深谙考试规律。</p>
+                    </div>
+                    <div class="feature-item">
+                        <div class="feature-icon">🔄</div>
+                        <h3>循环学习</h3>
+                        <p>报名后可无限次观看回放，反复学习难点，直到掌握为止。</p>
+                    </div>
+                    <div class="feature-item">
+                        <div class="feature-icon">🛡️</div>
+                        <h3>服务保障</h3>
+                        <p>提供专属学习群答疑，考前冲刺资料，以及专业的督学服务。</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- FAQ Section -->
+        <section class="section faq-section">
+            <div class="container faq-container">
+                <div class="section-header">
+                    <h2>常见问题</h2>
+                    <p>关于伊通进修平台的常见疑问解答。</p>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">报名后如何开始学习？<span>+</span></div>
+                    <div class="faq-answer">报名成功后，您将收到登录账号和密码。登录后可在“我的课程”中找到对应课程，点击“开始学习”即可进入学习页面。</div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">课程支持手机端观看吗？<span>+</span></div>
+                    <div class="faq-answer">支持。伊通进修平台完美适配PC端、平板和手机端，您可以在任何有网络的地方通过手机APP或网页进行学习。</div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">如果考试未通过怎么办？<span>+</span></div>
+                    <div class="faq-answer">我们提供“不过重修”服务。只要在规定时间内未通过考试，您可以免费参加下一期课程的复习，直到通过为止。</div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">如何申请退款？<span>+</span></div>
+                    <div class="faq-answer">课程购买后7天内，且未开始学习或学习进度低于10%，支持无条件全额退款。请联系在线客服处理。</div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <a href="#" class="logo" style="color: var(--white); margin-bottom: 20px; display: inline-block;">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 10v6M2 10l10-5 10 5-10 5z"/><path d="M6 12v5c3 3 9 3 12 0v-5"/></svg>
+                        <span>伊通进修</span>
+                    </a>
+                    <p style="font-size: 0.9rem; line-height: 1.8;">
+                        伊通进修平台致力于为职场人士提供便捷、高效、专业的继续教育与职业资格认证服务。我们相信，持续学习是个人成长的核心动力。
+                    </p>
+                </div>
+                <div class="footer-col">
+                    <h4>快速导航</h4>
+                    <ul>
+                        <li><a href="#">关于我们</a></li>
+                        <li><a href="#">课程体系</a></li>
+                        <li><a href="#">师资力量</a></li>
+                        <li><a href="#">学员案例</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>热门分类</h4>
+                    <ul>
+                        <li><a href="#">会计职称</a></li>
+                        <li><a href="#">建筑考试</a></li>
+                        <li><a href="#">教师资格</a></li>
+                        <li><a href="#">医药卫生</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>联系方式</h4>
+                    <ul>
+                        <li>客服热线：400-888-xxxx</li>
+                        <li>工作时间：周一至周日 9:00-21:00</li>
+                        <li>电子邮箱：support@yitongjx.com</li>
+                        <li>地址：北京市朝阳区教育科技园区A座</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 伊通进修平台 版权所有 | 京ICP备XXXXXXXX号</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Simple FAQ Interaction
+        document.querySelectorAll('.faq-question').forEach(item => {
+            item.addEventListener('click', () => {
+                const parent = item.parentElement;
+                parent.classList.toggle('active');
+                
+                // Toggle plus/minus icon
+                const icon = item.querySelector('span');
+                if (parent.classList.contains('active')) {
+                    icon.textContent = '-';
+                } else {
+                    icon.textContent = '+';
+                }
+            });
+        });
+    </script>
+</body>
+                  </html>
