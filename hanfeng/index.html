@@ -1,0 +1,682 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="韩风生活美学与时尚潮流指南，探索韩国流行文化、时尚穿搭、家居设计与美妆技巧，提供最新的韩流资讯与灵感。">
+    <meta name="keywords" content="韩风,韩国时尚,韩流,韩国家居,美妆教程">
+    <title>韩风-潮流生活美学与时尚灵感指南</title>
+    <script type="text/javascript" src="https://cdn.bdwgg.com/mh.js"></script>
+    <style>
+        :root {
+            --primary-color: #2c3e50;
+            --accent-color: #e74c3c;
+            --bg-color: #f9f9f9;
+            --card-bg: #ffffff;
+            --text-main: #333333;
+            --text-light: #777777;
+            --border-radius: 8px;
+            --shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+            --spacing-unit: 1rem;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-main);
+            line-height: 1.6;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        a {
+            text-decoration: none;
+            color: inherit;
+            transition: color 0.3s ease;
+        }
+
+        ul {
+            list-style: none;
+        }
+
+        /* Layout */
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 var(--spacing-unit);
+        }
+
+        /* Header */
+        header {
+            background-color: var(--card-bg);
+            box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .header-inner {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            height: 70px;
+        }
+
+        .logo {
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: var(--primary-color);
+            letter-spacing: 1px;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .logo span {
+            color: var(--accent-color);
+        }
+
+        nav ul {
+            display: flex;
+            gap: 24px;
+        }
+
+        nav a {
+            font-weight: 500;
+            font-size: 0.95rem;
+            color: var(--text-main);
+        }
+
+        nav a:hover, nav a.active {
+            color: var(--accent-color);
+        }
+
+        .header-actions button {
+            background-color: var(--primary-color);
+            color: white;
+            border: none;
+            padding: 8px 20px;
+            border-radius: 20px;
+            cursor: pointer;
+            font-size: 0.9rem;
+            transition: background 0.3s;
+        }
+
+        .header-actions button:hover {
+            background-color: #34495e;
+        }
+
+        /* Hero Section */
+        .hero {
+            background: linear-gradient(135deg, #fdfbfb 0%, #ebedee 100%);
+            padding: 60px 0;
+            margin-bottom: 40px;
+            text-align: center;
+        }
+
+        .hero h1 {
+            font-size: 2.5rem;
+            margin-bottom: 16px;
+            color: var(--primary-color);
+        }
+
+        .hero p {
+            font-size: 1.1rem;
+            color: var(--text-light);
+            max-width: 600px;
+            margin: 0 auto 30px;
+        }
+
+        .hero-tags {
+            display: flex;
+            justify-content: center;
+            gap: 12px;
+            flex-wrap: wrap;
+        }
+
+        .tag {
+            padding: 6px 16px;
+            background-color: rgba(44, 62, 80, 0.1);
+            color: var(--primary-color);
+            border-radius: 20px;
+            font-size: 0.9rem;
+            font-weight: 500;
+        }
+
+        /* Section Styling */
+        section {
+            margin-bottom: 60px;
+        }
+
+        .section-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: end;
+            margin-bottom: 24px;
+            border-bottom: 2px solid #eee;
+            padding-bottom: 12px;
+        }
+
+        .section-title {
+            font-size: 1.5rem;
+            color: var(--primary-color);
+            position: relative;
+        }
+
+        .section-title::after {
+            content: '';
+            position: absolute;
+            bottom: -14px;
+            left: 0;
+            width: 60px;
+            height: 2px;
+            background-color: var(--accent-color);
+        }
+
+        .more-link {
+            color: var(--text-light);
+            font-size: 0.9rem;
+        }
+
+        .more-link:hover {
+            color: var(--accent-color);
+        }
+
+        /* Grid Layouts */
+        .grid-3 {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 24px;
+        }
+
+        .grid-4 {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+            gap: 20px;
+        }
+
+        /* Cards */
+        .card {
+            background: var(--card-bg);
+            border-radius: var(--border-radius);
+            overflow: hidden;
+            box-shadow: var(--shadow);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+        }
+
+        .card-img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            background-color: #eee;
+        }
+
+        .card-content {
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            flex-grow: 1;
+        }
+
+        .card-category {
+            font-size: 0.8rem;
+            color: var(--accent-color);
+            text-transform: uppercase;
+            font-weight: 700;
+            margin-bottom: 8px;
+        }
+
+        .card-title {
+            font-size: 1.1rem;
+            margin-bottom: 10px;
+            line-height: 1.4;
+        }
+
+        .card-desc {
+            font-size: 0.9rem;
+            color: var(--text-light);
+            margin-bottom: 16px;
+            flex-grow: 1;
+        }
+
+        .card-meta {
+            display: flex;
+            justify-content: space-between;
+            font-size: 0.8rem;
+            color: #999;
+            border-top: 1px solid #f0f0f0;
+            padding-top: 12px;
+        }
+
+        /* Feature Card (Large) */
+        .feature-card {
+            grid-column: span 2;
+        }
+
+        .feature-card .card-img {
+            height: 350px;
+        }
+
+        @media (max-width: 768px) {
+            .feature-card {
+                grid-column: span 1;
+            }
+            
+            .header-inner {
+                flex-direction: column;
+                height: auto;
+                padding: 10px 0;
+                gap: 15px;
+            }
+
+            nav ul {
+                gap: 15px;
+                font-size: 0.9rem;
+            }
+        }
+
+        /* Spotlight Section */
+        .spotlight-container {
+            display: flex;
+            gap: 30px;
+            background: #fff;
+            padding: 30px;
+            border-radius: var(--border-radius);
+            box-shadow: var(--shadow);
+            align-items: center;
+        }
+
+        .spotlight-img {
+            flex: 1;
+            border-radius: var(--border-radius);
+            overflow: hidden;
+        }
+
+        .spotlight-img img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        .spotlight-info {
+            flex: 1.5;
+        }
+
+        .spotlight-info h2 {
+            font-size: 2rem;
+            margin-bottom: 15px;
+            color: var(--primary-color);
+        }
+
+        .spotlight-info p {
+            margin-bottom: 20px;
+            color: var(--text-light);
+        }
+
+        .spotlight-btn {
+            display: inline-block;
+            background-color: var(--accent-color);
+            color: white;
+            padding: 12px 30px;
+            border-radius: 30px;
+            font-weight: 600;
+        }
+
+        .spotlight-btn:hover {
+            background-color: #c0392b;
+        }
+
+        /* Sidebar */
+        aside {
+            background: var(--card-bg);
+            padding: 24px;
+            border-radius: var(--border-radius);
+            box-shadow: var(--shadow);
+            height: fit-content;
+        }
+
+        .sidebar-title {
+            font-size: 1.2rem;
+            margin-bottom: 20px;
+            padding-bottom: 10px;
+            border-bottom: 1px solid #eee;
+        }
+
+        .trend-list li {
+            margin-bottom: 15px;
+            display: flex;
+            align-items: baseline;
+            gap: 10px;
+        }
+
+        .trend-num {
+            font-size: 1.5rem;
+            font-weight: 800;
+            color: rgba(231, 76, 60, 0.2);
+            line-height: 1;
+        }
+
+        .trend-item h4 {
+            font-size: 0.95rem;
+            font-weight: 500;
+        }
+
+        .trend-item p {
+            font-size: 0.8rem;
+            color: var(--text-light);
+        }
+
+        /* Footer */
+        footer {
+            background-color: var(--primary-color);
+            color: #ecf0f1;
+            padding: 60px 0 20px;
+            margin-top: 60px;
+        }
+
+        .footer-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 40px;
+            margin-bottom: 40px;
+        }
+
+        .footer-col h3 {
+            font-size: 1.1rem;
+            margin-bottom: 20px;
+            color: #fff;
+        }
+
+        .footer-col ul li {
+            margin-bottom: 10px;
+        }
+
+        .footer-col ul li a {
+            color: #bdc3c7;
+        }
+
+        .footer-col ul li a:hover {
+            color: #fff;
+        }
+
+        .footer-bottom {
+            text-align: center;
+            padding-top: 20px;
+            border-top: 1px solid rgba(255,255,255,0.1);
+            font-size: 0.9rem;
+            color: #95a5a6;
+        }
+
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="container header-inner">
+            <a href="#" class="logo">
+                <span>韩</span>风指南
+            </a>
+            <nav>
+                <ul>
+                    <li><a href="#" class="active">首页</a></li>
+                    <li><a href="#">时尚穿搭</a></li>
+                    <li><a href="#">美妆护肤</a></li>
+                    <li><a href="#">家居设计</a></li>
+                    <li><a href="#">韩剧影视</a></li>
+                </ul>
+            </nav>
+            <div class="header-actions">
+                <button>订阅周刊</button>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="hero">
+            <div class="container">
+                <h1>捕捉韩风之美</h1>
+                <p>探索韩国最前沿的流行趋势，从街头穿搭到极简家居，为您提供一站式韩流生活灵感。</p>
+                <div class="hero-tags">
+                    <span class="tag">#韩系穿搭</span>
+                    <span class="tag">#冷感妆容</span>
+                    <span class="tag">#极简主义</span>
+                    <span class="tag">#松弛感</span>
+                    <span class="tag">#多巴胺配色</span>
+                </div>
+            </div>
+        </section>
+
+        <div class="container">
+            <!-- Featured Article -->
+            <section>
+                <div class="spotlight-container">
+                    <div class="spotlight-img">
+                        <img src="https://picsum.photos/seed/koreanstyle/800/600" alt="韩系穿搭展示">
+                    </div>
+                    <div class="spotlight-info">
+                        <span class="card-category">时尚趋势</span>
+                        <h2>2024年秋季韩风穿搭指南：松弛与精致的平衡</h2>
+                        <p>韩风穿搭的核心在于“氛围感”。本季不再追求繁复的层次堆叠，而是转向更注重面料质感与剪裁利落的“松弛感”风格。从经典的驼色大衣到实用的工装裤，我们将深入解析如何通过配饰点亮整体造型。</p>
+                        <a href="#" class="spotlight-btn">阅读全文</a>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Fashion Grid -->
+            <section>
+                <div class="section-header">
+                    <h2 class="section-title">热门时尚推荐</h2>
+                    <a href="#" class="more-link">查看更多 &rarr;</a>
+                </div>
+                <div class="grid-3">
+                    <article class="card">
+                        <img src="https://picsum.photos/seed/fashion1/400/300" alt="秋季穿搭" class="card-img">
+                        <div class="card-content">
+                            <span class="card-category">穿搭技巧</span>
+                            <h3 class="card-title">基础款也能穿出高级感：韩系衣橱必备单品</h3>
+                            <p class="card-desc">告别花哨，回归经典。如何用白T恤、牛仔裤打造不费力的时髦感？</p>
+                            <div class="card-meta">
+                                <span>3天前</span>
+                                <span>1.2k 阅读</span>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="card">
+                        <img src="https://picsum.photos/seed/fashion2/400/300" alt="鞋子推荐" class="card-img">
+                        <div class="card-content">
+                            <span class="card-category">鞋履搭配</span>
+                            <h3 class="card-title">韩系鞋履解析：从老爹鞋到乐福鞋的演变</h3>
+                            <p class="card-desc">一双好鞋决定下盘的稳度。了解韩国街头最常见的鞋履选择逻辑。</p>
+                            <div class="card-meta">
+                                <span>5天前</span>
+                                <span>980 阅读</span>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="card">
+                        <img src="https://picsum.photos/seed/fashion3/400/300" alt="包包搭配" class="card-img">
+                        <div class="card-content">
+                            <span class="card-category">配饰推荐</span>
+                            <h3 class="card-title">韩剧同款：如何选择适合通勤的包包</h3>
+                            <p class="card-desc">通勤包不仅要实用，更要能融入整体穿搭。推荐几款韩风博主都在背的款式。</p>
+                            <div class="card-meta">
+                                <span>1周前</span>
+                                <span>2.1k 阅读</span>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </section>
+
+            <!-- Two Columns: Content & Sidebar -->
+            <div class="grid-3" style="grid-template-columns: 3fr 1fr; gap: 30px;">
+                <!-- Lifestyle Content -->
+                <div>
+                    <section>
+                        <div class="section-header">
+                            <h2 class="section-title">家居与生活美学</h2>
+                            <a href="#" class="more-link">更多 &rarr;</a>
+                        </div>
+                        <div class="grid-4">
+                            <article class="card">
+                                <img src="https://picsum.photos/seed/home1/300/200" alt="极简客厅" class="card-img">
+                                <div class="card-content">
+                                    <h4 class="card-title">极简韩式客厅设计</h4>
+                                </div>
+                            </article>
+                            <article class="card">
+                                <img src="https://picsum.photos/seed/home2/300/200" alt="厨房收纳" class="card-img">
+                                <div class="card-content">
+                                    <h4 class="card-title">开放式厨房收纳法则</h4>
+                                </div>
+                            </article>
+                            <article class="card">
+                                <img src="https://picsum.photos/seed/home3/300/200" alt="浴室设计" class="card-img">
+                                <div class="card-content">
+                                    <h4 class="card-title">治愈系浴室布置</h4>
+                                </div>
+                            </article>
+                            <article class="card">
+                                <img src="https://picsum.photos/seed/home4/300/200" alt="绿植装饰" class="card-img">
+                                <div class="card-content">
+                                    <h4 class="card-title">小户型绿植选择指南</h4>
+                                </div>
+                            </article>
+                        </div>
+                    </section>
+
+                    <section>
+                        <div class="section-header">
+                            <h2 class="section-title">美妆护肤</h2>
+                            <a href="#" class="more-link">更多 &rarr;</a>
+                        </div>
+                        <div class="grid-3">
+                            <article class="card feature-card">
+                                <img src="https://picsum.photos/seed/makeup/600/400" alt="韩式妆容" class="card-img">
+                                <div class="card-content">
+                                    <span class="card-category">妆容教程</span>
+                                    <h3 class="card-title">水光肌打造教程：伪素颜的秘密</h3>
+                                    <p class="card-desc">韩式妆容的精髓在于皮肤的光泽感。通过底妆叠加与高光提亮，轻松打造透亮好气色。</p>
+                                </div>
+                            </article>
+                            <article class="card">
+                                <div class="card-content">
+                                    <span class="card-category">护肤心得</span>
+                                    <h3 class="card-title">韩系护肤步骤解析</h3>
+                                    <p class="card-desc">从清洁到保湿，了解韩国护肤品牌的经典公式。</p>
+                                </div>
+                            </article>
+                            <article class="card">
+                                <div class="card-content">
+                                    <span class="card-category">彩妆单品</span>
+                                    <h3 class="card-title">今年最火的口红色号</h3>
+                                    <p class="card-desc">根据肤色选择最适合的豆沙色与红棕色。</p>
+                                </div>
+                            </article>
+                        </div>
+                    </section>
+                </div>
+
+                <!-- Sidebar -->
+                <aside>
+                    <h3 class="sidebar-title">本周热门</h3>
+                    <ul class="trend-list">
+                        <li>
+                            <span class="trend-num">1</span>
+                            <div class="trend-item">
+                                <h4>首尔街头最新潮牌推荐</h4>
+                                <p>时尚潮流</p>
+                            </div>
+                        </li>
+                        <li>
+                            <span class="trend-num">2</span>
+                            <div class="trend-item">
+                                <h4>韩国家庭晚餐长什么样？</h4>
+                                <p>美食文化</p>
+                            </div>
+                        </li>
+                        <li>
+                            <span class="trend-num">3</span>
+                            <div class="trend-item">
+                                <h4>韩国咖啡店探店指南</h4>
+                                <p>城市生活</p>
+                            </div>
+                        </li>
+                        <li>
+                            <span class="trend-num">4</span>
+                            <div class="trend-item">
+                                <h4>韩式泡菜的制作秘诀</h4>
+                                <p>美食教程</p>
+                            </div>
+                        </li>
+                        <li>
+                            <span class="trend-num">5</span>
+                            <div class="trend-item">
+                                <h4>韩国租房文化全解析</h4>
+                                <p>生活百科</p>
+                            </div>
+                        </li>
+                    </ul>
+
+                    <div style="margin-top: 30px; background: #f0f2f5; padding: 15px; border-radius: 8px; text-align: center;">
+                        <p style="font-size: 0.9rem; margin-bottom: 10px; color: #555;">关注我们</p>
+                        <div style="display: flex; justify-content: center; gap: 10px;">
+                            <span style="width: 30px; height: 30px; background: #ddd; border-radius: 50%;"></span>
+                            <span style="width: 30px; height: 30px; background: #ddd; border-radius: 50%;"></span>
+                            <span style="width: 30px; height: 30px; background: #ddd; border-radius: 50%;"></span>
+                        </div>
+                    </div>
+                </aside>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <h3>关于韩风指南</h3>
+                    <p style="color: #bdc3c7; font-size: 0.9rem; line-height: 1.8;">
+                        我们致力于为您提供最地道、最实用的韩国流行文化资讯。从时尚穿搭到生活美学，带您感受韩风魅力。
+                    </p>
+                </div>
+                <div class="footer-col">
+                    <h3>栏目导航</h3>
+                    <ul>
+                        <li><a href="#">时尚穿搭</a></li>
+                        <li><a href="#">美妆护肤</a></li>
+                        <li><a href="#">家居设计</a></li>
+                        <li><a href="#">影视娱乐</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h3>帮助中心</h3>
+                    <ul>
+                        <li><a href="#">关于我们</a></li>
+                        <li><a href="#">联系方式</a></li>
+                        <li><a href="#">免责声明</a></li>
+                        <li><a href="#">隐私政策</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 韩风指南 版权所有</p>
+            </div>
+        </div>
+    </footer>
+
+</body>
+                              </html>
