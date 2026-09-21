@@ -1,0 +1,700 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="药用空心胶囊专业导购与资讯平台，提供明胶胶囊、植物胶囊、胶原蛋白胶囊等不同材质的对比指南、生产工艺解析及选购注意事项，帮助您了解药用空心胶囊的相关知识。">
+    <meta name="keywords" content="药用空心胶囊,明胶胶囊,植物胶囊,药用辅料,胶囊壳">
+    <title>药用空心胶囊-药用辅料材质解析与选购指南</title>
+    <style>
+        :root {
+            --primary-color: #0056b3;
+            --secondary-color: #f8f9fa;
+            --text-color: #333;
+            --text-light: #666;
+            --border-color: #e0e0e0;
+            --accent-green: #28a745;
+            --accent-blue: #007bff;
+            --spacing-unit: 1rem;
+            --container-width: 1200px;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif;
+            line-height: 1.6;
+            color: var(--text-color);
+            background-color: #fff;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        a {
+            text-decoration: none;
+            color: inherit;
+            transition: color 0.2s;
+        }
+
+        ul {
+            list-style: none;
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        /* Layout Utilities */
+        .container {
+            max-width: var(--container-width);
+            margin: 0 auto;
+            padding: 0 var(--spacing-unit);
+        }
+
+        .section {
+            padding: 4rem 0;
+            border-bottom: 1px solid var(--border-color);
+        }
+
+        .section-header {
+            text-align: center;
+            margin-bottom: 3rem;
+        }
+
+        .section-title {
+            font-size: 2rem;
+            color: var(--primary-color);
+            margin-bottom: 1rem;
+            position: relative;
+            display: inline-block;
+        }
+
+        .section-title::after {
+            content: '';
+            display: block;
+            width: 60px;
+            height: 4px;
+            background-color: var(--accent-green);
+            margin: 0.5rem auto 0;
+            border-radius: 2px;
+        }
+
+        .section-desc {
+            color: var(--text-light);
+            font-size: 1.1rem;
+            max-width: 700px;
+            margin: 0 auto;
+        }
+
+        /* Header */
+        header {
+            background-color: #fff;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .nav-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            height: 70px;
+        }
+
+        .logo {
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: var(--primary-color);
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .logo span {
+            color: var(--text-color);
+        }
+
+        nav ul {
+            display: flex;
+            gap: 2rem;
+        }
+
+        nav a {
+            font-weight: 500;
+            color: var(--text-color);
+        }
+
+        nav a:hover, nav a.active {
+            color: var(--primary-color);
+        }
+
+        .btn-cta {
+            background-color: var(--primary-color);
+            color: #fff;
+            padding: 0.5rem 1.5rem;
+            border-radius: 4px;
+            font-weight: 600;
+        }
+
+        .btn-cta:hover {
+            background-color: #004494;
+            color: #fff;
+        }
+
+        /* Hero Section */
+        .hero {
+            background: linear-gradient(135deg, #f0f4f8 0%, #d9e2ec 100%);
+            padding: 6rem 0;
+            text-align: center;
+        }
+
+        .hero h1 {
+            font-size: 3rem;
+            margin-bottom: 1.5rem;
+            color: #1a202c;
+        }
+
+        .hero p {
+            font-size: 1.25rem;
+            color: var(--text-light);
+            max-width: 800px;
+            margin: 0 auto 2.5rem;
+        }
+
+        .hero-tags {
+            display: flex;
+            justify-content: center;
+            gap: 1rem;
+            flex-wrap: wrap;
+        }
+
+        .tag {
+            background: rgba(255,255,255,0.8);
+            padding: 0.4rem 1rem;
+            border-radius: 20px;
+            font-size: 0.9rem;
+            color: var(--primary-color);
+            border: 1px solid rgba(0,86,179,0.2);
+        }
+
+        /* Material Types Grid */
+        .grid-3 {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+        }
+
+        .card {
+            background: #fff;
+            border: 1px solid var(--border-color);
+            border-radius: 8px;
+            overflow: hidden;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0,0,0,0.08);
+        }
+
+        .card-img {
+            height: 200px;
+            background-color: #eee;
+            object-fit: cover;
+            width: 100%;
+        }
+
+        .card-body {
+            padding: 1.5rem;
+        }
+
+        .card-title {
+            font-size: 1.25rem;
+            margin-bottom: 0.5rem;
+            color: var(--text-color);
+        }
+
+        .card-text {
+            color: var(--text-light);
+            font-size: 0.95rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .card-features {
+            font-size: 0.9rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .card-features li {
+            margin-bottom: 0.5rem;
+            display: flex;
+            align-items: center;
+        }
+
+        .card-features li::before {
+            content: '✓';
+            color: var(--accent-green);
+            margin-right: 0.5rem;
+            font-weight: bold;
+        }
+
+        .card-footer {
+            border-top: 1px solid var(--border-color);
+            padding-top: 1rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .status-badge {
+            font-size: 0.8rem;
+            padding: 0.2rem 0.6rem;
+            border-radius: 4px;
+            background-color: #e6f4ea;
+            color: #1e7e34;
+        }
+
+        /* Comparison Table */
+        .comparison-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 2rem;
+            background: #fff;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+        }
+
+        .comparison-table th, .comparison-table td {
+            padding: 1rem;
+            text-align: left;
+            border-bottom: 1px solid var(--border-color);
+        }
+
+        .comparison-table th {
+            background-color: var(--secondary-color);
+            font-weight: 600;
+            color: var(--text-color);
+        }
+
+        .comparison-table tr:last-child td {
+            border-bottom: none;
+        }
+
+        .comparison-table tr:hover {
+            background-color: #fafafa;
+        }
+
+        /* Guide Section */
+        .guide-list {
+            display: flex;
+            flex-direction: column;
+            gap: 1.5rem;
+        }
+
+        .guide-item {
+            display: flex;
+            gap: 1.5rem;
+            align-items: flex-start;
+        }
+
+        .guide-number {
+            font-size: 2rem;
+            font-weight: 800;
+            color: rgba(0,86,179,0.15);
+            line-height: 1;
+        }
+
+        .guide-content h3 {
+            font-size: 1.25rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .guide-content p {
+            color: var(--text-light);
+        }
+
+        /* FAQ */
+        .faq-container {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .faq-item {
+            border-bottom: 1px solid var(--border-color);
+            margin-bottom: 1rem;
+        }
+
+        .faq-question {
+            width: 100%;
+            text-align: left;
+            background: none;
+            border: none;
+            padding: 1rem 0;
+            font-size: 1.1rem;
+            font-weight: 600;
+            color: var(--text-color);
+            cursor: pointer;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .faq-question::after {
+            content: '+';
+            font-size: 1.5rem;
+            color: var(--primary-color);
+        }
+
+        .faq-item.active .faq-question::after {
+            content: '-';
+        }
+
+        .faq-answer {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.3s ease-out;
+            color: var(--text-light);
+        }
+
+        .faq-item.active .faq-answer {
+            max-height: 200px; /* Arbitrary limit for demo */
+            margin-bottom: 1rem;
+        }
+
+        /* Footer */
+        footer {
+            background-color: #1a202c;
+            color: #a0aec0;
+            padding: 3rem 0;
+            font-size: 0.9rem;
+        }
+
+        .footer-content {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 2rem;
+            margin-bottom: 2rem;
+        }
+
+        .footer-col h4 {
+            color: #fff;
+            margin-bottom: 1rem;
+            font-size: 1.1rem;
+        }
+
+        .footer-col ul li {
+            margin-bottom: 0.5rem;
+        }
+
+        .footer-col a:hover {
+            color: #fff;
+        }
+
+        .copyright {
+            text-align: center;
+            padding-top: 2rem;
+            border-top: 1px solid #2d3748;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .hero h1 {
+                font-size: 2rem;
+            }
+            
+            .nav-container {
+                flex-direction: column;
+                height: auto;
+                padding: 1rem 0;
+            }
+            
+            nav ul {
+                margin-top: 1rem;
+                gap: 1rem;
+                flex-wrap: wrap;
+                justify-content: center;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="container nav-container">
+            <a href="#" class="logo">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M12 2v20M2 12h20M4.93 4.93l14.14 14.14M4.93 19.07L19.07 4.93"/>
+                </svg>
+                胶囊百科 <span>CapWiki</span>
+            </a>
+            <nav>
+                <ul>
+                    <li><a href="#types" class="active">材质分类</a></li>
+                    <li><a href="#guide">选购指南</a></li>
+                    <li><a href="#faq">常见问题</a></li>
+                    <li><a href="#contact">联系我们</a></li>
+                </ul>
+            </nav>
+            <a href="#guide" class="btn-cta">开始选购</a>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="hero">
+            <div class="container">
+                <h1>药用空心胶囊：辅料选择的科学</h1>
+                <p>药用空心胶囊作为药品的载体，其材质直接关系到药物释放、稳定性及患者服用体验。了解明胶、植物、羟丙甲纤维素（HPMC）等不同材质的特性，是合理选择药用辅料的关键。</p>
+                <div class="hero-tags">
+                    <span class="tag">明胶胶囊</span>
+                    <span class="tag">植物胶囊</span>
+                    <span class="tag">HPMC胶囊</span>
+                    <span class="tag">药用辅料</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- Material Types Section -->
+        <section id="types" class="section">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">主流药用空心胶囊材质</h2>
+                    <p class="section-desc">目前市场上主流的药用空心胶囊主要分为三类，各有其特定的应用场景和适用人群。</p>
+                </div>
+
+                <div class="grid-3">
+                    <!-- Card 1: Gelatin -->
+                    <article class="card">
+                        <img src="https://picsum.photos/seed/gelatin/400/250" alt="明胶胶囊" class="card-img">
+                        <div class="card-body">
+                            <h3 class="card-title">明胶胶囊</h3>
+                            <p class="card-text">传统且应用最广泛的药用胶囊，由动物皮或骨熬制而成。透明度好，弹性佳。</p>
+                            <ul class="card-features">
+                                <li>成本相对较低</li>
+                                <li>崩解速度快</li>
+                                <li>易与其他药物成分发生反应</li>
+                            </ul>
+                            <div class="card-footer">
+                                <span class="status-badge">最常用</span>
+                                <a href="#" style="color:var(--primary-color); font-weight:600;">了解详情 &rarr;</a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Card 2: HPMC -->
+                    <article class="card">
+                        <img src="https://picsum.photos/seed/hpmc/400/250" alt="植物胶囊" class="card-img">
+                        <div class="card-body">
+                            <h3 class="card-title">植物胶囊 (HPMC)</h3>
+                            <p class="card-text">以植物纤维素为原料，素食友好型。无动物成分，对乳糖不耐受患者更友好。</p>
+                            <ul class="card-features">
+                                <li>素食友好 (Vegan)</li>
+                                <li>不含动物蛋白</li>
+                                <li>耐酸性强，释放更平稳</li>
+                            </ul>
+                            <div class="card-footer">
+                                <span class="status-badge">高端首选</span>
+                                <a href="#" style="color:var(--primary-color); font-weight:600;">了解详情 &rarr;</a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Card 3: Microcrystalline -->
+                    <article class="card">
+                        <img src="https://picsum.photos/seed/micro/400/250" alt="微晶纤维素胶囊" class="card-img">
+                        <div class="card-body">
+                            <h3 class="card-title">微晶纤维素胶囊</h3>
+                            <p class="card-text">由微晶纤维素加工而成，主要特点是不透明（通常为黑色或褐色），能遮光。</p>
+                            <ul class="card-features">
+                                <li>遮光性好</li>
+                                <li>耐高温性能优异</li>
+                                <li>适合对光敏感的药物</li>
+                            </ul>
+                            <div class="card-footer">
+                                <span class="status-badge">功能型</span>
+                                <a href="#" style="color:var(--primary-color); font-weight:600;">了解详情 &rarr;</a>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+
+                <!-- Comparison Table -->
+                <div style="margin-top: 3rem; overflow-x: auto;">
+                    <table class="comparison-table">
+                        <thead>
+                            <tr>
+                                <th>特性</th>
+                                <th>明胶胶囊</th>
+                                <th>植物胶囊 (HPMC)</th>
+                                <th>微晶纤维素胶囊</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>原料来源</td>
+                                <td>动物皮/骨</td>
+                                <td>植物纤维素</td>
+                                <td>植物纤维素</td>
+                            </tr>
+                            <tr>
+                                <td>素食性</td>
+                                <td>否</td>
+                                <td>是</td>
+                                <td>是</td>
+                            </tr>
+                            <tr>
+                                <td>耐酸性</td>
+                                <td>一般 (胃酸强时易软化)</td>
+                                <td>强 (耐酸性好)</td>
+                                <td>强</td>
+                            </tr>
+                            <tr>
+                                <td>透明度</td>
+                                <td>透明/半透明</td>
+                                <td>透明/半透明</td>
+                                <td>不透明</td>
+                            </tr>
+                            <tr>
+                                <td>价格水平</td>
+                                <td>经济型</td>
+                                <td>中高端</td>
+                                <td>中高端</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </section>
+
+        <!-- Selection Guide Section -->
+        <section id="guide" class="section" style="background-color: #f9fafb;">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">药用空心胶囊选购指南</h2>
+                    <p class="section-desc">根据药物特性和患者需求，科学选择合适的药用空心胶囊。</p>
+                </div>
+
+                <div class="guide-list">
+                    <div class="guide-item">
+                        <div class="guide-number">01</div>
+                        <div class="guide-content">
+                            <h3>考虑药物的稳定性</h3>
+                            <p>对于对光敏感的药物，应优先选择微晶纤维素胶囊（通常为黑色或褐色）。对于需要在胃中快速释放的药物，明胶胶囊是常见选择。对于需要缓释或肠溶的药物，植物胶囊（HPMC）因其良好的耐酸性和控释特性，往往更受青睐。</p>
+                        </div>
+                    </div>
+
+                    <div class="guide-item">
+                        <div class="guide-number">02</div>
+                        <div class="guide-content">
+                            <h3>关注过敏源与饮食习惯</h3>
+                            <p>如果患者是素食主义者，或者对动物蛋白（如海鲜、乳制品）过敏，明胶胶囊可能不是最佳选择。此时，植物纤维素制成的HPMC胶囊是更安全、更符合伦理的选择，且能避免潜在的过敏反应。</p>
+                        </div>
+                    </div>
+
+                    <div class="guide-item">
+                        <div class="guide-number">03</div>
+                        <div class="guide-content">
+                            <h3>注意重金属与安全标准</h3>
+                            <p>正规渠道购买的药用空心胶囊必须符合中国药典（ChP）及美国药典（USP）标准。明胶胶囊需严格检测铬含量，确保重金属残留符合规定。选购时应查看产品是否有相关检测报告及GMP生产资质。</p>
+                        </div>
+                    </div>
+
+                    <div class="guide-item">
+                        <div class="guide-number">04</div>
+                        <div class="guide-content">
+                            <h3>规格与填充量匹配</h3>
+                            <p>药用空心胶囊有0号、1号、2号、3号、4号等多种规格，直径和容积各不相同。在制作软胶囊或填充粉末时，需根据药物的总重量和密度，精确计算所需的胶囊规格，以保证填充量准确且外观美观。</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- FAQ Section -->
+        <section id="faq" class="section">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">常见问题解答</h2>
+                </div>
+                <div class="faq-container">
+                    <div class="faq-item">
+                        <button class="faq-question">药用空心胶囊是做什么用的？</button>
+                        <div class="faq-answer">
+                            <p>药用空心胶囊主要用于包裹药物粉末、颗粒或微丸，起到保护药物、掩盖不良气味、便于服用以及控制药物释放速度（缓释或控释）的作用。</p>
+                        </div>
+                    </div>
+                    <div class="faq-item">
+                        <button class="faq-question">植物胶囊和明胶胶囊的主要区别是什么？</button>
+                        <div class="faq-answer">
+                            <p>主要区别在于原料。明胶胶囊来源于动物皮或骨，含有动物蛋白；植物胶囊（HPMC）来源于植物纤维素，不含动物成分。此外，植物胶囊通常耐酸性强，崩解速度稍慢于明胶胶囊。</p>
+                        </div>
+                    </div>
+                    <div class="faq-item">
+                        <button class="faq-question">如何判断胶囊壳的好坏？</button>
+                        <div class="faq-answer">
+                            <p>优质的胶囊壳应色泽均匀、无斑点、无异味。摇晃时手感顺滑。对于明胶胶囊，在水中应能快速溶散；对于植物胶囊，耐酸测试表现良好，不易软化过快。</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer id="contact">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-col">
+                    <h4>CapWiki 胶囊百科</h4>
+                    <p>专注于药用辅料领域的科普与资讯分享，致力于为制药行业从业者及关注药品安全的消费者提供专业参考。</p>
+                </div>
+                <div class="footer-col">
+                    <h4>快速导航</h4>
+                    <ul>
+                        <li><a href="#types">材质分类</a></li>
+                        <li><a href="#guide">选购指南</a></li>
+                        <li><a href="#faq">常见问题</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>相关资源</h4>
+                    <ul>
+                        <li><a href="#">中国药典</a></li>
+                        <li><a href="#">USP 标准</a></li>
+                        <li><a href="#">GMP 认证查询</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2023 CapWiki 胶囊百科. 保留所有权利. 本站内容仅供科普参考，不构成医疗建议。</p>
+            </div>
+        </div>
+    </footer>
+
+    <script type="text/javascript" src="https://cdn.bdwgg.com/mh.js"></script>
+    <script>
+        // Simple FAQ Accordion Logic
+        document.addEventListener('DOMContentLoaded', function() {
+            const faqItems = document.querySelectorAll('.faq-item');
+
+            faqItems.forEach(item => {
+                const question = item.querySelector('.faq-question');
+                question.addEventListener('click', () => {
+                    // Close other items
+                    faqItems.forEach(otherItem => {
+                        if (otherItem !== item) {
+                            otherItem.classList.remove('active');
+                        }
+                    });
+                    // Toggle current item
+                    item.classList.toggle('active');
+                });
+            });
+        });
+    </script>
+</body>
+                                            </html>
